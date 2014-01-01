@@ -1,0 +1,21 @@
+---
+layout: default
+title: DevOp Talks - interviews and discussion around DevOps in the real world.
+---
+
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a><br />
+        {% if post.content contains '<!--more-->' %}
+          {{ post.content | split:'<!--more-->' | first }}
+          <a href="{{ post.url }}">More</a>
+        {% else %}
+          {{ post.content }}
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>

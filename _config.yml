@@ -1,0 +1,9 @@
+name: The DevOp Talks Blog
+markdown: redcarpet
+pygments: true
+
+author :
+  name : Jason Vanderhoof
+  email : jvanderhoof@gmail.com
+  github : jvanderhoof
+  twitter : jevanderhoof
